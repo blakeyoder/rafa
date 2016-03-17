@@ -1,0 +1,99 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: #16120e;
+}
+
+.header {
+  h1 {
+    font-family: "AvenirNext-UltraLight";
+    font-size: 32vw;
+    color: #ECECDD;
+    letter-spacing: 20px;
+    text-shadow: 0px 5px 23px rgba(0,0,0,0.50);
+  }
+  h2 {
+    font-family: "AvenirNext-UltraLight";
+    font-size: 5vw;
+    margin-top: -15px;
+    color: #ECECDD;
+    letter-spacing: 20px;
+    text-shadow: 0px 4px 7px rgba(0,0,0,0.50);
+  }
+}
+
+.scroller {
+  padding-top: 30px;
+}
+
+//start content boxes
+.content-box-1 {
+  height: 440px;
+  width: 724px;
+  background: #ECECDD;
+  box-shadow: 0px 6px 22px 0px rgba(0,0,0,0.50);
+  margin-top: 50px;
+  margin-bottom: -55px;
+  z-index: 10;
+  p {
+    font-family: "PlayfairDisplay-Regular";
+    font-size: 26px;
+    color: black;
+    line-height: 52px;
+    text-align: left;
+    margin: 15px;
+  }
+}
+
+.content-box-2 {
+  width: 658px;
+  height: 258px;
+  border: 13px solid #ECECDD;
+  box-shadow: 0px 7px 26px 0px rgba(67,64,64,0.50);
+  p {
+    font-family: "PlayfairDisplay-Regular";
+    font-size: 64px;
+    color: #ECECDD;
+    line-height: 70px;
+    text-align: center;
+  }
+}
+
+.content-box-3 {
+  height: 286px;
+  width: 625px;
+  background: #ECECDD;
+  box-shadow: 0px 6px 22px 0px rgba(0,0,0,0.50);
+  margin-top: 100px;
+}
+
+.content-box-4 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 1161px;
+  height: 504px;
+  border: 12px solid #ECECDD;
+  box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.50);
+  h3 {
+    font-family: "AvenirNext-UltraLight";
+    font-size: 48px;
+    color: #ECECDD;
+    letter-spacing: 7.15px;
+    text-align: center;
+  }
+}
+
+//brands section
+.brands {
+  width: 100%;
+  background: #ECECDD;
+  h1 {
+    font-family: "AvenirNext-UltraLight";
+    font-size: 72px;
+    color: #203040;
+    letter-spacing: 10px;
+    line-height: 72px;
+    text-align: center;
+  }
+}
