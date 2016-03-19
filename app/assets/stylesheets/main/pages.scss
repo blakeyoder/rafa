@@ -38,11 +38,13 @@ body {
   z-index: 10;
   p {
     font-family: "PlayfairDisplay-Regular";
-    font-size: 26px;
+    font-size: 24px;
     color: black;
     line-height: 52px;
     text-align: left;
-    margin: 15px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
   }
 }
 
