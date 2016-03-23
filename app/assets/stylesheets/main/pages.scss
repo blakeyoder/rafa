@@ -1,6 +1,11 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//imports
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300);
+
 //mixins
 $tablet-width: 768px;
 $desktop-width: 1024px;
@@ -30,14 +35,16 @@ body {
 
 .header {
   h1 {
-    font-family: "AvenirNext-UltraLight";
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
     font-size: 32vw;
     color: #ECECDD;
     letter-spacing: 20px;
     text-shadow: 0px 5px 23px rgba(0,0,0,0.50);
   }
   h2 {
-    font-family: "AvenirNext-UltraLight";
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
     font-size: 5vw;
     margin-top: -15px;
     color: #ECECDD;
@@ -60,7 +67,7 @@ body {
   margin-bottom: -55px;
   z-index: 10;
   p {
-    font-family: "PlayfairDisplay-Regular";
+    font-family: 'Playfair Display', serif;;
     font-size: 24px;
     color: black;
     line-height: 52px;
@@ -83,7 +90,8 @@ body {
     margin-top: 100px;
   }
   p {
-    font-family: "PlayfairDisplay-Regular";
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
     font-size: 64px;
     color: #ECECDD;
     line-height: 70px;
@@ -110,7 +118,8 @@ body {
   border: 12px solid #ECECDD;
   box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.50);
   h3 {
-    font-family: "AvenirNext-UltraLight";
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
     font-size: 48px;
     color: #ECECDD;
     letter-spacing: 7.15px;
@@ -120,7 +129,8 @@ body {
 
 #names {
   text-align: left;
-  font-family: "PlayfairDisplay-Bold";
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
   font-size: 48px;
   color: #ECECDD;
   margin: 0px;
@@ -129,7 +139,8 @@ body {
 
 #titles {
   text-align: left;
-  font-family: "AvenirNext-Regular";
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
   font-size: 18px;
   color: #ECECDD;
   letter-spacing: 3px;
@@ -144,7 +155,8 @@ body {
 
 .contact-info {
   p {
-    font-family: "AvenirNext-Regular";
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     font-size: 16px;
     color: #ECECDD;
     letter-spacing: 5px;
@@ -159,7 +171,8 @@ body {
   width: 100%;
   background: #ECECDD;
   h1 {
-    font-family: "AvenirNext-UltraLight";
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
     font-size: 72px;
     color: #203040;
     letter-spacing: 10px;
