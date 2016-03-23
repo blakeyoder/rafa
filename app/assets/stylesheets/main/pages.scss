@@ -1,6 +1,29 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+//mixins
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$mobile-width: 620px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width - 1px}){
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+//styles
 body {
   background-color: #16120e;
 }
@@ -45,6 +68,9 @@ body {
     width: 90%;
     margin: auto;
     margin-top: 20px;
+    @include mobile {
+      font-size: 18px;
+    }
   }
 }
 
@@ -53,12 +79,18 @@ body {
   height: 258px;
   border: 13px solid #ECECDD;
   box-shadow: 0px 7px 26px 0px rgba(67,64,64,0.50);
+  @include mobile {
+    margin-top: 100px;
+  }
   p {
     font-family: "PlayfairDisplay-Regular";
     font-size: 64px;
     color: #ECECDD;
     line-height: 70px;
     text-align: center;
+    @include mobile {
+      font-size: 45px;
+    }
   }
 }
 
