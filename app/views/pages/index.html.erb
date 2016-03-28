@@ -67,9 +67,9 @@
   <h1>BRANDS</h1>
   <div class="container">
     <div class="row">
-      <%= image_tag 'logo-eviltwin.png', class: "col m4 s4" %>
-      <%= image_tag 'logo-eviltwin.png', class: "col m4 s4" %>
-      <%= image_tag 'logo-eviltwin.png', class: "col m4 s4" %>
+      <% @brands.each do |b| %>
+        <h1 class="col m4 s4"><%= b.name %></h1>
+      <% end %>
     </div>
     <div class="row">
       <%= image_tag 'logo-eviltwin.png', class: "col m4 s4" %>
