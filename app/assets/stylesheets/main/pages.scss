@@ -10,9 +10,16 @@
 $tablet-width: 768px;
 $desktop-width: 1024px;
 $mobile-width: 620px;
+$small-mobile: 620px;
 
 @mixin mobile {
   @media (max-width: #{$mobile-width - 1px}){
+    @content;
+  }
+}
+
+@mixin small-mobile {
+  @media (max-width: #{$small-mobile - 1px}){
     @content;
   }
 }
@@ -160,6 +167,9 @@ body {
     right: 55px;
     @include desktop {
       right: 40px;
+    }
+    @include small-mobile {
+      right: -10px;
     }
     font-family: 'Lato', sans-serif;
     font-weight: 400;
