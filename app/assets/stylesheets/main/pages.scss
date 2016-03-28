@@ -10,16 +10,9 @@
 $tablet-width: 768px;
 $desktop-width: 1024px;
 $mobile-width: 620px;
-$small-mobile: 620px;
 
 @mixin mobile {
   @media (max-width: #{$mobile-width - 1px}){
-    @content;
-  }
-}
-
-@mixin small-mobile {
-  @media (max-width: #{$small-mobile - 1px}){
     @content;
   }
 }
@@ -164,17 +157,18 @@ body {
   margin-top: 20px;
   p {
     position: relative;
-    right: 55px;
+    right: 85px;
     @include desktop {
-      right: 40px;
+      right: 85px;
     }
-    @include small-mobile {
+    @include mobile {
       right: -10px;
+      font-size: 14px;
     }
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-feature-settings: "liga";
-    font-size: 14px;
+    font-size: 16px;
     color: #ECECDD;
     letter-spacing: 5px;
     line-height: 26px;
