@@ -2,21 +2,21 @@
 
 module Casein
   class BrandsController < Casein::CaseinController
-  
+
     ## optional filters for defining usage according to Casein::AdminUser access_levels
     # before_filter :needs_admin, :except => [:action1, :action2]
     # before_filter :needs_admin_or_current_user, :only => [:action1, :action2]
-  
+
     def index
       @casein_page_title = 'Brands'
   		@brands = Brand.order(sort_order(:name)).paginate :page => params[:page]
     end
-  
+
     def show
       @casein_page_title = 'View brand'
       @brand = Brand.find params[:id]
     end
-  
+
     def new
       @casein_page_title = 'Add a new brand'
     	@brand = Brand.new
@@ -24,7 +24,7 @@ module Casein
 
     def create
       @brand = Brand.new brand_params
-    
+
       if @brand.save
         flash[:notice] = 'Brand created'
         redirect_to casein_brands_path
@@ -33,12 +33,12 @@ module Casein
         render :action => :new
       end
     end
-  
+
     def update
       @casein_page_title = 'Update brand'
-      
+
       @brand = Brand.find params[:id]
-    
+
       if @brand.update_attributes brand_params
         flash[:notice] = 'Brand has been updated'
         redirect_to casein_brands_path
@@ -47,7 +47,7 @@ module Casein
         render :action => :show
       end
     end
- 
+
     def destroy
       @brand = Brand.find params[:id]
 
@@ -55,11 +55,11 @@ module Casein
       flash[:notice] = 'Brand has been deleted'
       redirect_to casein_brands_path
     end
-  
+
     private
-      
+
       def brand_params
-        params.require(:brand).permit(:name)
+        params.require(:brand).permit(:name, :image)
       end
 
   end
