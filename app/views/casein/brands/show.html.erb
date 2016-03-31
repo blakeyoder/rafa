@@ -5,10 +5,10 @@
 <%= form_for @brand, :url => casein_brand_path(@brand) do |f| %>
 
 	<%= render :partial => 'casein/brands/form', :locals => { :f => f } %>
-	
+
 	<p class="submits">
 	  	<%= link_to 'Cancel', casein_brands_path, :class => 'btn btn-mini btn-danger' %>
-		<%= f.submit "Save changes", :class => "btn btn-mini btn-primary" %>
+			<%= f.submit "Save changes", :class => "btn btn-mini btn-primary" %>
 	</p>
 
 <% end %>

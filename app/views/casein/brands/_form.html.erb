@@ -6,5 +6,6 @@
 	</div>
 	<div class="col-lg-6">
 		<%= casein_file_field f, f.object, @brand, :image %>
+		<%= image_tag @brand.image.url, class: "img-responsive thumbnail" %>
 	</div>
 </div>
