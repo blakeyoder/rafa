@@ -59,7 +59,7 @@ module Casein
     private
 
       def brand_params
-        params.require(:brand).permit(:image, :name)
+        params.require(:brand).permit(:image, :name, :link)
       end
 
   end

@@ -191,3 +191,12 @@ body {
     text-align: center;
   }
 }
+
+.brand-link {
+  color: black;
+}
+
+//I dont know why this selector needs to be so specific, but it does...
+.card-image.waves-effect.waves-block.card-overwrite {
+  max-height: 78%;
+}
