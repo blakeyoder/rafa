@@ -21,8 +21,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'materialize-sass'
 gem 'casein', '~>5.1.1'
 gem 'aws-sdk'
+gem 'aws'
 gem 'paperclip'
 gem 'figaro'
+gem 'parallax-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -30,6 +32,7 @@ group :development, :test do
   gem 'pry'
   gem 'puma'
   gem 'letter_opener'
+  gem 'foreman'
 end
 
 group :development do

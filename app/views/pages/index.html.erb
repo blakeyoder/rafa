@@ -4,8 +4,12 @@
   <%= image_tag 'mouse.png', class: 'scroller hide-on-med-and-down' %>
 </section>
 
-<div class="container">
+<div data-stellar-background-ratio="0.5">
+  <%= image_tag "hopsketch.png", class: "responsive-img hopsketch" %>
+</div>
 
+<div class="container">
+  <%= image_tag "grain.png", class: "responsive-img grain" %>
   <div class="row">
     <div class="content-box-1 col m8 s12 offset-m4">
       <p>Ut non odio vitae est venenatis varius. Donec ultrices libero et ligula dictum, id feugiat sem dignissim. Cras efficitur mauris id eleifend interdum. Sed eget enim arcu. Ut non odio vitae est venenatis varius.</p>
@@ -17,10 +21,10 @@
       <p>"Only Good Shit"</p>
     </div>
   </div>
-  <div class="row">
-    <div class="content-box-3 col m6 s12 offset-m6">
 
-    </div>
+  <div id="parallax" data-stellar-background-ratio="2">
+    <%= image_tag "hopsketch.png", class: "responsive-img hopsketch2" %>
+    <%= image_tag "RAFA_16.png", class: "responsive-img grain2" %>
   </div>
 
   <div class="row">

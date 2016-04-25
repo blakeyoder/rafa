@@ -189,6 +189,7 @@ body {
     letter-spacing: 10px;
     line-height: 72px;
     text-align: center;
+    padding-top: 10px;
   }
 }
 
@@ -199,4 +200,29 @@ body {
 //I dont know why this selector needs to be so specific, but it does...
 .card-image.waves-effect.waves-block.card-overwrite {
   max-height: 78%;
+}
+
+.card-content {
+  text-align: center;
+  font-family: 'Lato'
+}
+
+//images
+.hopsketch {
+  width: 150px;
+  margin-left: 100px;
+}
+
+.hopsketch2 {
+  width: 150px;
+}
+
+.grain {
+  width: 75px;
+  margin-left: 200px;
+}
+
+.grain2 {
+  width: 45px;
+  margin-left: 50%;
 }
