@@ -214,7 +214,14 @@ body {
 }
 
 .hopsketch2 {
+  @include mobile {
+    position: fixed;
+  };
   width: 150px;
+}
+
+#parallax {
+  background: url('hopsketch.png');
 }
 
 .grain {
