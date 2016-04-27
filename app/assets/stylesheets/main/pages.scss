@@ -209,14 +209,23 @@ body {
 
 //images
 .hopsketch {
+  width: 125px;
+  margin-left: -40px;
+}
+
+.hopright {
+  position: absolute;
   width: 150px;
-  margin-left: 100px;
+  right: 15%;
+}
+
+.hopright2 {
+  position: absolute;
+  width: 100px;
+  right: 15%;
 }
 
 .hopsketch2 {
-  @include mobile {
-    position: fixed;
-  };
   width: 150px;
 }
 
