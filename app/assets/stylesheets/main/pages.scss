@@ -199,12 +199,19 @@ body {
 
 //I dont know why this selector needs to be so specific, but it does...
 .card-image.waves-effect.waves-block.card-overwrite {
-  max-height: 78%;
+  min-height: 78%;
+  img {
+    max-width: 325px;
+    margin: auto;
+    padding: 20px;
+  }
 }
 
 .card-content {
   text-align: center;
-  font-family: 'Lato'
+  font-family: 'Lato';
+  background-color: #ECECDD;
+  opacity: .7;
 }
 
 //images
@@ -227,10 +234,6 @@ body {
 
 .hopsketch2 {
   width: 150px;
-}
-
-#parallax {
-  background: url('hopsketch.png');
 }
 
 .grain {
