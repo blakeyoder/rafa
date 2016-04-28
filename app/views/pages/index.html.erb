@@ -70,9 +70,9 @@
       <% @brands.each do |b| %>
       <div class="col m6 s12">
         <div class="card medium">
-          <div class="card-image waves-effect waves-block waves-dark card-overwrite valign-wrapper">
+          <div class="card-image waves-effect waves-block waves-dark card-overwrite">
             <% unless b.image.blank? %>
-              <%= link_to image_tag(b.image), raw(b.link), class: "valign" %>
+              <%= link_to image_tag(b.image), raw(b.link), target: "_blank" %>
             <% end %>
           </div>
           <div class="card-content">
