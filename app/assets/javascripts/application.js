@@ -13,12 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require materialize-sprockets
-//= require stellar
+//= require scrollax
 //= require turbolinks
 //= require_tree .
-
-$(document).ready(function(){
-  $.stellar({
-    
-  });
-});
