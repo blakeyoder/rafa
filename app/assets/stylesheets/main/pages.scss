@@ -60,7 +60,7 @@ body {
 
 //start content boxes
 .content-box-1 {
-  height: 360px;
+  min-height: 410px;
   width: 724px;
   background: #ECECDD;
   box-shadow: 0px 6px 22px 0px rgba(0,0,0,0.50);
@@ -78,6 +78,7 @@ body {
     margin-top: 20px;
     @include mobile {
       font-size: 14px;
+      line-height: 40px;
     }
     @include tablet {
       font-size: 16px;
@@ -87,7 +88,7 @@ body {
 
 .content-box-2 {
   width: 658px;
-  height: 258px;
+  min-height: 200px;
   border: 13px solid #ECECDD;
   box-shadow: 0px 7px 26px 0px rgba(67,64,64,0.50);
   @include mobile {
