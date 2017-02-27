@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
   def index
-    @brands = Brand.all.paginate(:page => params[:page], :per_page => 10).order(:name)
+    @brands = Brand.all.order(:name)
   end
 end

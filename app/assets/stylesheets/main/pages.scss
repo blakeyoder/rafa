@@ -60,13 +60,10 @@ body {
 
 //start content boxes
 .content-box-1 {
-  min-height: 410px;
   width: 724px;
   background: #ECECDD;
   box-shadow: 0px 6px 22px 0px rgba(0,0,0,0.50);
   margin-top: 50px;
-  margin-bottom: -55px;
-  z-index: 10;
   p {
     font-family: 'Playfair Display', serif;
     font-size: 20px;
@@ -84,6 +81,10 @@ body {
       font-size: 16px;
     }
   }
+}
+
+body > div.container > div:nth-child(1) > div {
+  padding-bottom: 20px;
 }
 
 .content-box-2 {
