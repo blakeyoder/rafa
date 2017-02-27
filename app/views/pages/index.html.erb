@@ -82,6 +82,7 @@
   <h1>BRANDS</h1>
   <div class="container">
     <div class="row">
+      <%= will_paginate @brands %>
       <% @brands.each do |b| %>
       <div class="col m6 s12">
         <div class="card medium">
