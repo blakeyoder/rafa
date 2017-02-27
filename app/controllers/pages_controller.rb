@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
   def index
-    @brands = Brand.all.sort
+    @brands = Brand.all.order(:name)
   end
 end
