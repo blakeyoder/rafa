@@ -23,79 +23,19 @@
     <div class="content-box-4 col l12 m12 s12">
       <h3>CONTACTS</h3>
       <div class="row">
+        <% @employees.each do |e| %>
         <div class="col m6 s12">
-          <p id="names">Lauren Shor</p>
-          <p id="titles">Owner</p>
+          <p id="names"><%= e.name %></p>
+          <p id="titles"><%= e.description %></p>
         </div>
         <div class="col m4 offset-m2 contact-info">
-          <p><a href="mailto:info@rafadistributing.com?Subject=Rafa%20Inquiry" target="_top">info@rafadistributing.com</a><p>
-          <p><a href="tel:843-505-1703">843.505.1703</a></p>
+          <p><a href="mailto:<%= e.email %>?Subject=Rafa%20Inquiry" target="_top"><%= e.email %></a><p>
+          <p><a href="tel:<%= e.phone %>"><%= e.phone %></a></p>
         </div>
       </div>
-      <div class="row">
-        <div class="col m6 s12">
-          <p id="names">Will Chesak</p>
-          <p id="titles">Sales, Charleston, Summerville, Hilton Head Island, Fort Mill, Rock Hill, Myrtle Beach & Florence</p>
-          <p id="cicerones">Certified Cicerone &#174</p>
-        </div>
-        <div class="col m4 offset-m2 contact-info">
-          <p><a href="mailto:will@rafadistributing.com?Subject=Rafa%20Inquiry" target="_top">will@rafadistributing.com</a><p>
-          <p><a href="tel:703-774-5860">703.774.5860</a></p>
-        </div>
       </div>
-      <div class="row">
-        <div class="col m6 s12">
-          <p id="names">Ashley Bower</p>
-          <p id="titles">Sales, Columbia & Greenville/Upstate</p>
-          <p id="cicerones">Certified Cicerone &#174</p>
-        </div>
-        <div class="col m4 offset-m2 contact-info">
-          <p><a href="mailto:ashley@rafadistributing.com?Subject=Rafa%20Inquiry" target="_top">ashley@rafadistributing.com</a><p>
-          <p><a href="tel:803-447-0319">803.447.0319</a></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col m6 s12">
-          <p id="names">Aaron Craig</p>
-          <p id="titles">Warehouse Manager</p>
-        </div>
-        <div class="col m4 offset-m2 contact-info">
-          <p><a href="mailto:aaron@rafadistributing.com?Subject=Rafa%20Inquiry" target="_top">aaron@rafadistributing.com</a><p>
-          <p><a href="tel:843-505-0957">843.505.0957</a></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col m6 s12">
-          <p id="names">Mark Sahara</p>
-          <p id="titles">Operations & Reporting</p>
-        </div>
-        <div class="col m4 offset-m2 contact-info">
-          <p><a href="mailto:mark@rafadistributing.com?Subject=Rafa%20Inquiry" target="_top">mark@rafadistributing.com</a><p>
-          <p><a href="tel:404-889-0455">404.889.0455</a></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col m6 s12">
-          <p id="names">Keith Clarry</p>
-          <p id="titles">Assistant Warehouse Manager</p>
-        </div>
-        <div class="col m4 offset-m2 contact-info">
-          <p><a href="mailto:keith@rafadistributing.com?Subject=Rafa%20Inquiry" target="_top">keith@rafadistributing.com</a><p>
-          <p><a href="tel:347.277.1462">347.277.1462</a></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col m6 s12">
-          <p id="names">Alexis DiNello Love</p>
-          <p id="titles">Business Development Manager</p>
-        </div>
-        <div class="col m4 offset-m2 contact-info">
-          <p><a href="mailto:alexis@rafadistributing.com?Subject=Rafa%20Inquiry" target="_top">alexis@rafadistributing.com</a><p>
-          <p><a href="tel:347.277.1462">912.596.3500</a></p>
-        </div>
-      </div>
+      <% end %>
     </div>
-  </div>
 </div>
 
 <section class="brands">
